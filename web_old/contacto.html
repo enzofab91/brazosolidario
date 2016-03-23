@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Brazo Solidario</title>
+		
+		<link rel="shortcut icon" href="/brazosolidario/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/brazosolidario/images/favicon.ico" type="image/x-icon">
+		
+		<!-- styles -->
+		<link href="/brazosolidario/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/brazosolidario/css/slider.css" rel="stylesheet">
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="/brazosolidario/js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<div id="contenedora" style="margin: 25px auto">
+			<div id="cabezal" style="position:relative; top: 20px; left: 150px">
+			<div class="cabezal-img" style="float:left">
+				<a href="/brazosolidario/aindex.aspx">
+					<img src="images/logo64.png"></img>
+				</a>
+			</div>
+			<div class="btn-group cabezal-menu" role="group" style="position:relative; top:20px; left:200px">
+				<button onClick="window.location.href = 'aindex.aspx'" type="button" class="btn btn-default">Inicio</button>
+				<button type="button" class="btn btn-default">Actividades</button>
+
+				 <div class="btn-group" role="group">
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  ¿Quiénes somos?
+					  <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+					  <li><a href="#">Misión</a></li>
+					  <li><a href="#">Visión</a></li>
+					  <li><a href="#">Valores</a></li>
+					</ul>
+					<a href="/brazosolidario/contacto.html"><button type="button" class="btn btn-default">Contacto</button></a>
+				</div>
+			</div>
+			<div style="position:relative; top:-40px; left:800px">
+				<p style="font-size:20px; color:#91DC5A">¡Seguínos en nuestras redes!</p>
+				<div style="position:relative; left:85px">
+					<a href="http://www.facebook.com/brazosolidariouruguay" target="_blank"><img src="/brazosolidario/images/social-fb.png"></img></a>&nbsp &nbsp
+					<a href="http://www.instagram.com/brazosolidario" target="_blank"><img src="/brazosolidario/images/social-ig.png"></img></a>&nbsp &nbsp
+					<a href="http://www.twitter.com/brazosolidario" target="_blank"><img src="/brazosolidario/images/social-tw.png"></img></a>
+				</div>
+			</div>
+			<div id="contacto">
+				<div style="position:relative; top:100px; left:735px">
+				<table width="300px" border="3px" bordercolor="#91DC5A"><tr><td>
+					<span style="font-size: 14px"></br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¿Querés formar parte del equipo de &nbsp&nbsp&nbsp&nbsp&nbsp&nbspBrazo 
+					Solidario? ¿Querés conocer </br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspnuestras actividades y barrios &nbsp&nbsp&nbsp&nbsp&nbsp&nbspinvolucrados?
+					</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp¡No dudes en contactarnos!</br></br></td></tr></table>
+				</div>
+				<div style="margin: 25px auto; position: relative; top: -250px">
+					</br></br><br>
+					<form class="form-horizontal">
+					<fieldset>
+						<!-- Form Name -->
+						<legend>Envíanos tu comentario:</legend>
+						<span style="position:relative; left:80px" class="help-block">Los campos marcados con asterisco son obligatorios.</span>  
+						<!-- Text input-->
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="textinput" >Nombre (*)</label>  
+						  <div class="col-md-4">
+						  <input id="inputNombre" name="inputNombre" type="text" maxlength="50" placeholder="Ingrese su nombre" class="form-control input-md" required>
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="textinput">Apellido (*)</label>  
+						  <div class="col-md-4">
+						  <input id="inputApellido" name="inputApellido" type="text" maxlength="50" placeholder="Ingrese su apellido" class="form-control input-md">
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="textinput">Email (*)</label>  
+						  <div class="col-md-4">
+						  <input id="inputEmail" name="inputEmail" type="text" maxlength="50" placeholder="Ingrese su correo electrónico" class="form-control input-md">
+						  </div>
+						</div>
+
+						<!-- Text input-->
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="textinput">Celular</label>  
+						  <div class="col-md-4">
+						  <input id="inputCelular" name="inputCelular" type="text" maxlength="50" placeholder="Ingrese su número" class="form-control input-md">
+						  </div>
+						</div>
+						
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="selectbasic">Area de intéres</label>
+						  <div class="col-md-4">
+							<select id="selectbasic" name="selectbasic" class="form-control">
+							  <option value="1">Seleccione...</option>
+							  <option value="2">Recreación</option>
+							  <option value="3">Recolección</option>
+							  <option value="2">Redes sociales</option>
+							</select>
+						  </div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group" style="position:relative; left:-250px">
+						  <label class="col-md-4 control-label" for="textinput">Comentario</label>  
+						  <div class="col-md-4">
+						  <textarea id="inputComentario" style="resize:none" size="500" name="inputComentario" type="textarea" placeholder="Ingrese su comentario" class="form-control input-md"></textarea>
+						  <span class="help-block">Max. 500 caracteres</span>  
+						  </div>
+						  
+						</div>
+						
+						</fieldset>
+						<!-- Button -->
+						<div class="form-group" style="position:relative; left:550px">
+						  <div class="col-md-4">
+							<button id="botonEnviar" name="singlebutton" class="btn btn-primary">Enviar</button>
+						  </div>
+						</div>
+					</form>
+				</div>
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			$("botonEnviar").on("submit",function(){
+				var nombre = $("#inputNombre").val();
+				var apellido = $("#inputApellido").val();
+				var email = $("#inputEmail").val();
+				
+				
+			});
+		</script>
+	</body>
+</html>
