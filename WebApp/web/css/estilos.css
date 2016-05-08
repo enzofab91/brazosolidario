@@ -1,0 +1,72 @@
+body {
+    background-color: yellow;
+	/* no funca el fondo D: */
+}
+
+h1 {
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	font-size: 48px;
+	line-height: 40px;
+	letter-spacing: -1px;
+	color: #444;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-weight: 100;
+	text-align: center;
+}
+
+.main-table {
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 3%;
+    padding-bottom: 0.1%;
+    border-radius: 8px;
+}
+
+.th-main {
+    text-align: center;
+}
+
+.td-center {
+	text-align: center;
+}
+
+.result {
+	padding-right: 20%;
+}
+
+.th-result {
+	background-color: #f9f9f9;
+}
+
+.resultProduct {
+	width:50%;
+	text-align: center;
+	background-color: #e6e6e6;
+	cursor: pointer;
+}
+
+.resultProductSelected {
+	width:50%;
+	text-align: center;
+	background-color: #bfbfbf;
+}
+
+.cabezal-img {
+	float:left;
+}
+
+.cabezal-menu {
+	position:relative;
+	top:50px;
+	left:25px;
+}
+
+#cabezal {
+	position:relative;
+	left: 25px
+}
+
+.spacer {
+    margin-top: 100px; /* define margin as you see fit */
+}
