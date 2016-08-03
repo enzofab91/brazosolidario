@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
-	<servlet>
-		<servlet-name>home</servlet-name>
-		<servlet-class>com.brazosolidario.servlets.home</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>home</servlet-name>
-		<url-pattern>/home</url-pattern>
-	</servlet-mapping>
-	<session-config>
-		<session-timeout>
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>com.brazosolidario.servlets.home</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>about</servlet-name>
+        <servlet-class>com.brazosolidario.servlets.about</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>contact</servlet-name>
+        <servlet-class>com.brazosolidario.servlets.contact</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ajaxmail</servlet-name>
+        <servlet-class>com.brazosolidario.servlets.ajaxmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>about</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contact</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ajaxmail</servlet-name>
+        <url-pattern>/ajaxmail</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
 			30
 		</session-timeout>
-	</session-config>
+    </session-config>
 </web-app>

@@ -3,60 +3,42 @@
 	<head>
         <%@include file="head.jsp" %>
 		<title>Brazo Solidario</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
+    <header>
+        <%@include file="header.jsp" %>
+    </header>
+
 	<body>
-		<div class="container">
-			<!--<div id="contenedora" style="margin: 25px auto">-->
-			<!--<div id="cabezal" style="position:relative; top: 20px; left: 550px">-->
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<img class="center-block" src="img/logo128.png" style="height: 15vmin"></img>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<a href="http://www.facebook.com/brazosolidario" target="_blank">
-						<img src="img/social-fb.png" style="height: 7vmin"></img>
-					</a>
-					<a href="http://www.instagram.com/brazosolidario" target="_blank">
-						<img src="img/social-ig.png" style="height: 7vmin"></img>
-					</a>
-					<a href="http://www.twitter.com/brazosolidario" target="_blank">
-						<img src="img/social-tw.png" style="height: 7vmin"></img>
-					</a>
+		<!--e6ebf3-->
+		<!--#bfc9d7-->
+		<!--#d9dee6-->
+
+		<div class="container" style="padding:0vmin">
+			<!--si es desktop, mostrar sidebar-->
+			<% if (request.getHeader("User-Agent").indexOf("Mobile") != -1) {
+					columnWidth = 12;
+				} else {
+					columnWidth = 8;
+				}%>
+			<!--contenedor de contenido-->
+			<div class="col-lg-<%=columnWidth%> col-md-<%=columnWidth%> col-sm-<%=columnWidth%> col-xs-<%=columnWidth%>" style="background-color:#e6ebf3">
+				<div class="row" style="padding-top:10vmin;padding-bottom:10vmin">
+					<img src="img/diadelniñocarteleras.jpg" style="height: 70vmin" class="img-responsive center-block"></img>
 				</div>
 			</div>
-			<div class="col-xs-12" style="height:3vmin;"></div>
-			<div class="row center-block">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<h2 class="font-prox">Un sitio totalmente renovado para vos</h2>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-						<h2 class="font-prox">¡Próximamente!</h2>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-				</div>
+			<% if (request.getHeader("User-Agent").indexOf("Mobile") == -1) {
+					columnWidth = 4;%>
+			<!--contenedor de sidebar-->
+			<div id="visible-desktop" class="col-lg-<%=columnWidth%> col-md-<%=columnWidth%> col-sm-<%=columnWidth%> col-xs-<%=columnWidth%>">
+				<%@include file="sidebar.jsp" %>
 			</div>
-			<div class="col-xs-12" style="height:3vmin;"></div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-					<h2 class="subhead">Por consultas, enviar un mail a <a href="mailto:contacto@brazosolidario.org?Subject=Consulta">contacto@brazosolidario.org</a></a></h2>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
-			</div>
-			<div class="col-xs-12" style="height:3vmin;"></div>
-			<div class="row">
-				<img src="img/diadelniñocarteleras.jpg" style="height: 70vmin" class="img-responsive center-block"></img>
-			</div>
-			<div class="col-xs-12" style="height:10vmin;"></div>
-			<!--</div>-->
-			<!--</div>-->
+			<%}%>
 		</div>
+
 	</body>
 </html>
+
+<script>
+	$("#content").load("/home #content > *");
+</script>

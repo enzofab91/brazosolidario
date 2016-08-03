@@ -44,11 +44,21 @@
 				font-weight: lighter;
 				font-variant: normal;
 				text-transform: uppercase;
-				color: #666666;
 				/*margin-top: 1vmin;*/
 				text-align: center!important;
 				letter-spacing: 0.1vmin;
 			}
+
+			@media screen and (min-width: 0px) and (max-width: 600px) {
+				#desktop-content{ display: none; }  /* show it on small screens */
+				#mobile-content{ display: block; }  /* show it on small screens */
+			}
+
+			@media screen and (min-width: 600px) and (max-width: 2024px) {
+				#desktop-content { display: block; }   /* hide it elsewhere */
+				#mobile-content{ display: none; }  /* show it on small screens */
+			}
+
 		</style>
     </head>
 </html>

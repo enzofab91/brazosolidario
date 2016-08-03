@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Aug 3, 2016, 5:07:56 PM
+    Author     : marccio
+*/
+
+.navbar-default {
+	background-color:#d9dee6;
+	border-width: 0vmin;
+}
+
+.navbar-default .navbar-nav > .active{
+	background: #c3c7cf;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background: #c3c7cf;
+}
