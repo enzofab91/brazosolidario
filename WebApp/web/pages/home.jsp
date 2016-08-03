@@ -25,7 +25,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="col-xs-12" style="height:50px;"></div>
+			<div class="col-xs-12" style="height:3vmin;"></div>
 			<div class="row center-block">
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
@@ -42,7 +42,7 @@
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 				</div>
 			</div>
-			<div class="col-xs-12" style="height:50px;"></div>
+			<div class="col-xs-12" style="height:3vmin;"></div>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -50,6 +50,11 @@
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
 			</div>
+			<div class="col-xs-12" style="height:3vmin;"></div>
+			<div class="row">
+				<img src="img/diadelniñocarteleras.jpg" style="height: 70vmin" class="img-responsive center-block"></img>
+			</div>
+			<div class="col-xs-12" style="height:10vmin;"></div>
 			<!--</div>-->
 			<!--</div>-->
 		</div>
